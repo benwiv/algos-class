@@ -59,7 +59,7 @@ const same = (arr1,arr2) => {
     arr2Freq[val] = ++arr2Freq[val] || 1;
   }
 
-  for (let key in arr1Freq){
+  for (let key in arr1Freq) {
     if (!(key ** 2 in arr2Freq)) {
       return false;
     }
